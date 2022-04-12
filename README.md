@@ -1,4 +1,4 @@
-# protobuf2swagger
+# protobuf to openapi
 
 Work in progress project for saving some life, update not garrenteed. Welcome for pull request :).
 
