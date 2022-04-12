@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`nested can work 1`] = `
+Object {
+  "components": Object {
+    "schemas": Object {
+      "nested_message.ABitOfEverything": Object {
+        "description": "Intentionally complicated message type to cover many features of Protobuf.",
+        "properties": Object {
+          "bool_value": Object {
+            "type": "boolean",
+          },
+          "bytes_value": Object {
+            "format": "byte",
+            "type": "string",
+          },
+          "double_value": Object {
+            "format": "double",
+            "type": "string",
+          },
+          "fixed32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "fixed64_value": Object {
+            "format": "int64",
+            "type": "string",
+          },
+          "float_value": Object {
+            "format": "float",
+            "type": "number",
+          },
+          "int32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "int64_value": Object {
+            "format": "int64",
+            "type": "string",
+          },
+          "nested": Object {
+            "items": Object {
+              "$ref": "#/components/schemas/nested_message.ABitOfEverything.Nested",
+            },
+            "type": "array",
+          },
+          "nested_path_enum_value": Object {
+            "$ref": "#/components/schemas/nested_message.ABitOfEverything.Nested.DeepEnum",
+          },
+          "repeated_string_value": Object {
+            "items": Object {
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "sfixed32_value": Object {
+            "format": "int64",
+            "type": "integer",
+          },
+          "sfixed64_value": Object {
+            "format": "int64",
+            "type": "string",
+          },
+          "single_nested": Object {
+            "$ref": "#/components/schemas/nested_message.ABitOfEverything.Nested",
+          },
+          "sint32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "sint64_value": Object {
+            "format": "int64",
+            "type": "string",
+          },
+          "string_value": Object {
+            "type": "string",
+          },
+          "uint32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "uint64_value": Object {
+            "format": "int64",
+            "type": "string",
+          },
+          "uuid": Object {
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "nested_message.ABitOfEverything.Nested": Object {
+        "description": "Nested is nested type.",
+        "properties": Object {
+          "amount": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "name": Object {
+            "description": "name is nested field.",
+            "type": "string",
+          },
+          "ok": Object {
+            "$ref": "#/components/schemas/nested_message.ABitOfEverything.Nested.DeepEnum",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "nested_message.ABitOfEverything.Nested.DeepEnum": Object {
+        "description": "0 - FALSE // FALSE is false.
+1 - TRUE // TRUE is true.",
+        "enum": Array [
+          0,
+          1,
+        ],
+        "type": "number",
+      },
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "nested",
+    "version": "1",
+  },
+  "openapi": "3.0.0",
+  "paths": Object {},
+}
+`;
+
+exports[`nested swagger v2 1`] = `
+Object {
+  "definitions": Object {
+    "nested_message.ABitOfEverything": Object {
+      "description": "Intentionally complicated message type to cover many features of Protobuf.",
+      "properties": Object {
+        "bool_value": Object {
+          "type": "boolean",
+        },
+        "bytes_value": Object {
+          "format": "byte",
+          "type": "string",
+        },
+        "double_value": Object {
+          "format": "double",
+          "type": "string",
+        },
+        "fixed32_value": Object {
+          "format": "int32",
+          "type": "integer",
+        },
+        "fixed64_value": Object {
+          "format": "int64",
+          "type": "string",
+        },
+        "float_value": Object {
+          "format": "float",
+          "type": "number",
+        },
+        "int32_value": Object {
+          "format": "int32",
+          "type": "integer",
+        },
+        "int64_value": Object {
+          "format": "int64",
+          "type": "string",
+        },
+        "nested": Object {
+          "items": Object {
+            "$ref": "#/definitions/nested_message.ABitOfEverything.Nested",
+          },
+          "type": "array",
+        },
+        "nested_path_enum_value": Object {
+          "$ref": "#/definitions/nested_message.ABitOfEverything.Nested.DeepEnum",
+        },
+        "repeated_string_value": Object {
+          "items": Object {
+            "type": "string",
+          },
+          "type": "array",
+        },
+        "sfixed32_value": Object {
+          "format": "int64",
+          "type": "integer",
+        },
+        "sfixed64_value": Object {
+          "format": "int64",
+          "type": "string",
+        },
+        "single_nested": Object {
+          "$ref": "#/definitions/nested_message.ABitOfEverything.Nested",
+        },
+        "sint32_value": Object {
+          "format": "int32",
+          "type": "integer",
+        },
+        "sint64_value": Object {
+          "format": "int64",
+          "type": "string",
+        },
+        "string_value": Object {
+          "type": "string",
+        },
+        "uint32_value": Object {
+          "format": "int32",
+          "type": "integer",
+        },
+        "uint64_value": Object {
+          "format": "int64",
+          "type": "string",
+        },
+        "uuid": Object {
+          "type": "string",
+        },
+      },
+      "required": Array [],
+      "type": "object",
+    },
+    "nested_message.ABitOfEverything.Nested": Object {
+      "description": "Nested is nested type.",
+      "properties": Object {
+        "amount": Object {
+          "format": "int32",
+          "type": "integer",
+        },
+        "name": Object {
+          "description": "name is nested field.",
+          "type": "string",
+        },
+        "ok": Object {
+          "$ref": "#/definitions/nested_message.ABitOfEverything.Nested.DeepEnum",
+          "description": "DeepEnum comment.",
+        },
+      },
+      "required": Array [],
+      "type": "object",
+    },
+    "nested_message.ABitOfEverything.Nested.DeepEnum": Object {
+      "description": "0 - FALSE // FALSE is false.
+1 - TRUE // TRUE is true.",
+      "enum": Array [
+        0,
+        1,
+      ],
+      "type": "number",
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "nested",
+    "version": "1",
+  },
+  "paths": Object {},
+  "swagger": "2.0",
+}
+`;
